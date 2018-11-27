@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Shopify Development Tips</title>
 
+    <link href="{{base}}/assets/img/favicon.png" rel="shortcut icon" type="image/png">
     <link rel="stylesheet" rel="preload" href="https://use.typekit.net/uvx0qce.css" as="style" crossorigin>
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <link rel="stylesheet" href="/assets/css/pygment_trac.css">
+
+    {% include base.html %}
+
+    <link rel="stylesheet" href="{{base}}/assets/css/styles.css">
+    <link rel="stylesheet" href="{{base}}/assets/css/pygment_trac.css">
     <meta name="viewport" content="width=device-width">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -16,7 +20,7 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>Shopify Development Tips</h1>
+        <h1><a href="{{base}}">Shopify Development Tips</a></h1>
         <p>Shopify development tricks, tips, and code snippets</p>
       </header>
 
@@ -29,6 +33,6 @@
         <p>Need Shopify development help? <a href="mailto:hey@robbiesdevshop.com" target="_blank" class="reach-out" title="Contact Email">Reach out.</a></p>
       </footer>
     </div>
-    <script src="/assets/js/scale.fix.js"></script>
+    <script src="{{base}}/assets/js/scale.fix.js"></script>
   </body>
 </html>
